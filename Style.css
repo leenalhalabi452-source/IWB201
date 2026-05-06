@@ -1,0 +1,147 @@
+
+input[type="text"],
+input[type="tel"] {
+  width: 100%;
+  padding: 8px;
+  font: 14px Arial, sans-serif;
+  color: #2d0cc0;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* ── تنسيق الخط/النص من مكان واحد ── */
+body {
+  font: 15px Arial, sans-serif;
+  color: #4632c8;
+  background-color: #f7f1e8;
+  direction: rtl;
+  margin: 0;
+}
+
+h1, h2, h3 { color: #0a166e; }
+
+/* ── شريط التنقل ── */
+nav {
+  background-color: #5f6ed3;
+  padding: 12px 20px;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+nav a:hover, nav a.active { background: #50acde; }
+
+nav .brand {
+  margin-right: auto;
+  font-size: 20px;
+  font-weight: bold;
+  color: #bdc3e5;
+}
+
+/* ── إطار الصفحة ── */
+.page {
+  max-width: 960px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 24px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* ── الجداول ── */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+th, td {
+  padding: 9px 10px;
+  text-align: right;
+  border-bottom: 1px solid #ddd;
+}
+
+th { background: #5b7cdd; color: #fff; }
+
+.details-row { background: #fdf6e8; }
+.details-row ul { margin: 6px 18px; }
+
+/* ── الأزرار ── */
+button {
+  padding: 7px 16px;
+  font: 14px Arial, sans-serif;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-primary  { background: #1442ac; color: #fff; }
+.btn-secondary{ background: #eee; color: #333; border: 1px solid #5d9bc7; }
+.toggle-btn   { background: #6780dc; color: #fff; }
+
+/* ── النموذج ── */
+.form-section {
+  margin-top: 30px;
+  padding: 20px;
+  background: #fdf6e8;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+label { font-size: 13px; font-weight: bold; color: #ec0707; }
+.error-msg { font-size: 12px; color: red; min-height: 16px; }
+
+/* ── التذييل ── */
+footer {
+  text-align: center;
+  padding: 16px;
+  font-size: 13px;
+  color: #888;
+}
+
+/* ── النافذة المنبثقة ── */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal-box {
+  background: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  max-width: 520px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-x: auto;
+}
+
+.info-table { margin: 8px 0 14px; }
+.info-table td:first-child { color: #525151; }
